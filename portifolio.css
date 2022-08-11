@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #22212C;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #837E9F;
+    width: 100vw;
+}
+
+:root {
+    font-size: 62,5%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 18rem;
+    margin: 2rem;
+}
+
+.profile h1 {
+    margin-top: .5rem;
+    font-size: 1.7rem;
+}
+
+.profile h4 {
+    margin-top: .2rem;
+    font-size: 1.2rem;
+}
+
+.circle-image img {
+    border-radius: 50%;
+    border: 3px solid #00FF00;
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 25rem;
+    margin: 2rem;
+    font-size: 1.1rem;
+}
+
+.color img {
+    color: #837E9F;    
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    background-color: #CB92B1;
+    border-radius: .5rem;
+    padding: .4rem;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+  }
+
+.technologies {
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 15rem;
+    margin: 2rem;
+}
+
+.technologies h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;  
+    margin-bottom: 1.5rem;     
+}
+
+.technologies .rosa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.technologies .js, .reactjs, .node, .git, .github, .html, .css, .elixir, .react {
+    padding: .5rem;
+    background-color: #CB92B1;
+    color: black;
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: 1.3rem;
+    width: 8rem;
+    height: 2rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+/* .experiences {
+    border: 1px solid white;border-radius: 1.5rem;
+    width: 30rem;
+    height: 28rem;
+    margin: 2rem;
+}
+
+.experiences h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;  
+    margin-bottom: 1.5rem;     
+} */
+
+ul {
+    padding-left: 5rem;
+}
+
+ul li {
+    margin-top: 1.7rem;
+}
+
+.education {
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    width: 30rem;
+    height: 28rem;
+    margin: 2rem;
+}
+
+.education h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;  
+    margin-bottom: 1.5rem;     
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    /* width: 90rem; */
+    height: 6rem;
+    margin-top: 2rem;
+}
+
+.projects h2 {
+    margin-left: 2rem;
+}
+
+.projects a {
+    margin-right: 2rem;
+    color: #837E9F;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.section-esquerda {
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    /* width: 44rem; */
+    height: 10rem;
+    /* margin-left: 2rem; */
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.section-esquerda .items {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.section-direita {
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    /* width: 44rem; */
+    height: 10rem;
+    /* margin-left: 2rem; */
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.section-direita .items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sections img {
+    background-color: #CB92B1;
+    padding: .1rem;
+    background-color: #CB92B1;
+    border-radius: .4rem;
+    margin-right: .4rem;
+    margin-left: .6rem;
+}
+
+.my-onix {
+    margin-top: 1rem;
+    margin-left: .4rem;
+    display: flex;
+    align-items: center;   
+}
+
+.consulte {
+    margin-left: 1rem;
+}
+
+.items {
+    margin-bottom: 1rem;
+}
+
+.sub-items {
+    display: flex;
+    align-items: center;
+    margin-left: .4rem;
+}
+
+.js {
+    margin-right: 2rem;
+}
+
+.recent-posts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    /* width: 90rem; */
+    height: 6rem;
+    /* margin: 2rem; */
+}
+
+.recent-posts h2 {
+    margin-left: 2rem;
+}
+
+.post {
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    /* width: 90rem; */
+    height: 12rem;
+    /* margin: 2rem; */
+}
+
+.image-circle img {
+    border-radius: 50%;
+    border: 3px solid #00FF00;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    margin: 2rem;
+    position: absolute;
+}
+
+.info h3 {
+    font-size: 1.5rem;
+    margin-left: 12rem;
+    margin-top: 2rem;
+}
+
+p:nth-of-type(1) {
+    font-size: .9rem;
+    margin-left: 12rem;
+    margin-top: .3rem;
+}
+
+p:nth-of-type(2) {
+    font-size: 1.2rem;
+    margin-left: 12rem;
+    margin-top: 1.2rem;
+}
+
+p:nth-of-type(3) {
+    font-size: 1.2rem;
+    margin-left: 12rem;
+    margin-top: 1rem;
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 800px) {
+    .information {
+        margin: 2rem;
+    }
+}
