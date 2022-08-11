@@ -6,15 +6,16 @@
 
 body {
     display: flex;
-    flex-wrap: wrap;
     background-color: #22212C;
     font-family: 'Merriweather Sans', sans-serif;
+    gap: 2rem;
     color: #837E9F;
-    width: 100vw;
+    padding: 2rem;
 }
 
-:root {
-    font-size: 62,5%;
+.container {
+    display: grid;
+    gap: 2rem;
 }
 
 .profile {
@@ -26,7 +27,6 @@ body {
     border-radius: 1.5rem;
     width: 30rem;
     height: 18rem;
-    margin: 2rem;
 }
 
 .profile h1 {
@@ -48,15 +48,17 @@ body {
 }
 
 .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
+    /* justify-content: space-evenly; */
+
+    padding: 1.5rem;
+
+    gap: 1rem;
     
     border: 1px solid white;
     border-radius: 1.5rem;
-    width: 30rem;
-    height: 25rem;
-    margin: 2rem;
+    /* width: 30rem;
+    height: 25rem; */
     font-size: 1.1rem;
 }
 
@@ -78,15 +80,15 @@ body {
     border: 1px solid white;
     border-radius: 1.5rem;
     width: 30rem;
-    height: 15rem;
-    margin: 2rem;
+    padding: 1rem;
+    /* height: 15rem; */
 }
 
 .technologies h2 {
     font-size: 1.8rem;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;  
-    margin-bottom: 1.5rem;     
+    /* margin-top: 1.5rem;
+    margin-left: 1.5rem;   */
+    margin-bottom: 1rem;     
 }
 
 .technologies .rosa {
@@ -135,7 +137,6 @@ ul li {
     border-radius: 1.5rem;
     width: 30rem;
     height: 28rem;
-    margin: 2rem;
 }
 
 .education h2 {
@@ -159,7 +160,6 @@ ul li {
     border-radius: 1.5rem;
     /* width: 90rem; */
     height: 6rem;
-    margin-top: 2rem;
 }
 
 .projects h2 {
@@ -174,7 +174,6 @@ ul li {
 .sections {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -182,10 +181,10 @@ ul li {
     border: 1px solid white;
     border-radius: 1.5rem;
     /* width: 44rem; */
-    height: 10rem;
+    /* height: 10rem; */
     /* margin-left: 2rem; */
     font-size: 1.1rem;
-    padding-left: 1.5rem;
+    padding: 1rem;
 
     display: grid;
     gap: 1rem;
@@ -200,10 +199,10 @@ ul li {
     border: 1px solid white;
     border-radius: 1.5rem;
     /* width: 44rem; */
-    height: 10rem;
+    /* height: 10rem; */
     /* margin-left: 2rem; */
     font-size: 1.1rem;
-    padding-left: 1.5rem;
+    padding: 1rem;
 
     display: grid;
     gap: 1rem;
@@ -264,10 +263,11 @@ ul li {
 }
 
 .post {
+    padding: 1.5rem;
     border: 1px solid white;
     border-radius: 1.5rem;
     /* width: 90rem; */
-    height: 12rem;
+    /* height: 12rem; */
     /* margin: 2rem; */
 }
 
@@ -306,8 +306,54 @@ p:nth-of-type(3) {
     font-size: .9rem;
 }
 
-@media screen and (max-width: 800px) {
-    .information {
-        margin: 2rem;
+/*  */
+
+@media screen and (max-width: 1330px) {
+    body {
+        justify-content: center;
+    }
+    .sections {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-esquerda {
+        width: 100%;
+    }
+    .section-direita {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1020px) {
+    html {
+        font-size: .85rem;
+    }
+    body {
+        display: grid;
+        justify-content: center;
+    }
+    .profile, .links, .technologies, .education {
+        width: 100%;
+    }
+    .post {
+        display: grid;
+        gap: 1.5rem;
+    }
+    .image-circle, .info {
+        display: grid;
+        justify-content: center;
+    }
+    .info {
+        gap: .8rem;
+    }
+    .info > h3, .info > p {
+        text-align: center;
+        margin: 0;
+    }
+    .image-circle img {
+        position: unset;
+        margin: 0;
     }
 }
