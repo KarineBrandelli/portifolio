@@ -1,4 +1,4 @@
-<h1 align="center"> Portifolio </h1>
+<h1 align="center"> Portifólio </h1>
 
 <p align="center">
   Uma aplicação web de um portifolio pessoal desenvolvida com HTML e CSS.
@@ -7,7 +7,7 @@
 ------
 ## Como acessar a página?
 
-Você pode acessar a aplicação utilizando um computador, tablet ou celular clicando [nesse](https://karinebrandelli.github.io/projeto-portifolio/) link.
+Você pode acessar a aplicação utilizando um computador, tablet ou celular clicando [nesse](https://karinebrandelli.github.io/portifolio/) link.
 
 Se você quiser clonar o repositório em sua máquina, não é necessário fazer nenhum tipo de instalação para sua utilização.
 
